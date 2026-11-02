@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000000;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#escena {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+}
+
+#escena canvas {
+    display: block;
+}
+
+#pantalla-inicio {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background:
+        radial-gradient(circle, #251044 0%, #080315 55%, #02010b 100%);
+    transition: opacity 2s;
+}
+
+#pantalla-inicio h1 {
+    font-size: clamp(40px, 9vw, 90px);
+    letter-spacing: 15px;
+    color: #fff1a8;
+    text-shadow: 0 0 30px #bd71ff;
+}
+
+#pantalla-inicio p {
+    color: #d8c5ed;
+    letter-spacing: 3px;
+}
+
+#iniciar {
+    margin-top: 25px;
+    padding: 16px 32px;
+    border: 1px solid #e8c76b;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+#iniciar:hover {
+    background: #e8c76b;
+    color: #160b28;
+    box-shadow: 0 0 30px #e8c76b;
+}
+#escena canvas {
+    cursor: grab;
+}
+
+#escena canvas:active {
+    cursor: grabbing;
+}
