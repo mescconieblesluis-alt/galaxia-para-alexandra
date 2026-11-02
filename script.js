@@ -817,7 +817,7 @@ function crearMensajeAmor(texto) {
     });
 
     const mensaje = new THREE.Sprite(material);
-    mensaje.scale.set(3.6, 0.58, 1);
+    mensaje.scale.set(5.0, 0.9, 1);
 
     return mensaje;
 }
