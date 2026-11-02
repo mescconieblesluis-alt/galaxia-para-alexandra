@@ -769,7 +769,7 @@ function crearMensajeAmor(texto) {
 
     // Letras amarillas pequeñas
     ctx.fillStyle = '#ffd84d';
-    ctx.font = 'bold 20px Arial';
+    ctx.font = 'bold 34px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.shadowColor = '#ffbf24';
