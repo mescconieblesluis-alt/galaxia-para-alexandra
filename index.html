@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAXIA 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Biblioteca de gráficos 3D -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <div id="pantalla-inicio">
+        <h1>UNIVERSO</h1>
+        <p>Un pequeño universo para ti</p>
+        <button id="iniciar">ENTRAR AL UNIVERSO</button>
+    </div>
+
+    <div id="escena"></div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
